@@ -9,56 +9,55 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.red,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: 50,
+              height: double.infinity,
+              color: Colors.lightGreen,
+            ),
+            Container(
+              width: 50,
+              height: double.infinity,
+              color: Colors.amber,
+            ),
+            Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Container(
+                    child: Text(
+                      'Mobil Prg', overflow: TextOverflow.ellipsis, style: TextStyle(fontWeight: FontWeight.bold)
                     ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.yellow,
-                    )
-                  ],
-                ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.cyanAccent,
+                  )
+                ],
               ),
-              Container(
-                width: double.infinity,
-                height: 100,
-                color: Colors.blue,
-              ),
-              Container(
-                width: double.infinity,
-                height: 100,
-                color: Colors.lightGreen,
-              ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.red,
-                    )
-                  ],
-                ),
-              )
-            ],
-          ),
-        ),
+            )
+          ],
+        )),
       ),
     );
   }
